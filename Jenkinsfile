@@ -17,7 +17,8 @@ stages {
 
      sh 'mvn clean install --file pom.xml'
     }
-
+         
+    }
     
     post {
         success {
@@ -72,4 +73,4 @@ stages {
     }
 }
 
-}
+
