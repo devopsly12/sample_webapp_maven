@@ -11,17 +11,18 @@ agent any
     }
 
 stages {
-    stage('Build the code') {
 
-    steps {
-
+    stage('Build the code') 
+    {
+    steps 
+    {
      sh 'mvn clean install --file pom.xml'
+    }     
     }
-         
-    }
-    
-    post {
-        success {
+    post 
+    {
+        success 
+        {
 
             echo 'Now Archiving....'
             archiveArtifacts artifacts: '**/target/*.jar'
