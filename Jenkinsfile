@@ -8,7 +8,7 @@ stages {
 
     steps {
 
-     sh 'mvn clean install --file demo/pom.xml'
+     sh 'mvn clean install --file pom.xml'
     }
 
     
